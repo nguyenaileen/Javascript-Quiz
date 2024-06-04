@@ -1,3 +1,23 @@
+// HTML Elements
+var homepage = document.getElementById("homepage");
+var startButton = document.getElementById("startBtn");
+
+var quiz = document.getElementById("quiz");
+var question = document.getElementById("question");
+var quizQuestion = document.getElementById("quizQuestion");
+var result = documemt.getElementById("result");
+var answerA = document.getElementById("a");
+var answerB = document.getElementById("b");
+var answerC = document.getElementById("c");
+var answerD = document.getElementById("d");
+var timer = documemt.getElementById("timer");
+
+var gameEnd = document.getElementById("gameEnd");
+var score = document.getElementById("score");
+var quizQuestion = document.getElementById("quizQuestion");
+var submitScore = document.getElementById("submitScore");
+var playAgain = document.getElementById("playAgain");
+
 var todoInput = document.querySelector("#todo-text");
 var todoForm = document.querySelector("#todo-form");
 var todoList = document.querySelector("#todo-list");
@@ -47,7 +67,7 @@ function storeTodos() {
 }
 
 // Add submit event to form
-todoForm.addEventListener("submit", function(event) {
+todoForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
   var todoText = todoInput.value.trim();
@@ -67,7 +87,7 @@ todoForm.addEventListener("submit", function(event) {
 });
 
 // Add click event to todoList element
-todoList.addEventListener("click", function(event) {
+todoList.addEventListener("click", function (event) {
   var element = event.target;
 
   // Checks if element is a button
@@ -83,4 +103,4 @@ todoList.addEventListener("click", function(event) {
 });
 
 // Calls init to retrieve data and render it to the page on load
-init()
+init();
