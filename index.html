@@ -13,16 +13,16 @@
       <h2>This Quiz will test you on your Javascript fundamentals!</h2>
       <h3>See if you can beat the high score!</h3>
 
-      <button id="startbtn">Start Quiz</button>
+      <button class="startBtn">Start Quiz</button>
     </div>
 
     <div class="quiz">
       <div class="question card">
         <div id="quizQuestion"><h1>Question Placeholder</h1></div>
-        <button id="a">onclick="checkAnswer('a')">1</button>
-        <button id="b">onclick="checkAnswer('b')">1</button>
-        <button id="c">onclick="checkAnswer('c')">1</button>
-        <button id="d">onclick="checkAnswer('d')">1</button>
+        <button id="a">onclick="checkAnswer('a')">A</button>
+        <button id="b">onclick="checkAnswer('b')">B</button>
+        <button id="c">onclick="checkAnswer('c')">C</button>
+        <button id="d">onclick="checkAnswer('d')">D</button>
 
         <h3 class="result">That is</h3>
       </div>
@@ -30,13 +30,24 @@
       <h1 class="timer">Time:</h1>
     </div>
 
+    <div class="gameEnd">
+      <div class="result card">
+        <div>
+          <h1>Your Score:</h1>
+          <h1 class="Score">Score Placeholder</h1>
+        </div>
+        <button id="Submit Score">onclick="checkAnswer('a')">1</button>
+        <button id="Play Again">onclick="checkAnswer('b')">1</button>
+      </div>
+    </div>
+
     <div class="card">
-      <h1>Todo Tracker</h1>
+      <h1>High Score</h1>
       <form id="todo-form" method="POST">
-        <label for="todo-text">Add a Todo: </label>
+        <label for="todo-text">Add your initials: </label>
         <input
           type="text"
-          placeholder="I need to..."
+          placeholder="Type in initials and press enter"
           name="todo-text"
           id="todo-text"
         />
