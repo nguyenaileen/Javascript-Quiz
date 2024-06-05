@@ -42,14 +42,15 @@ ul {
 }
 
 li {
-  height: 50px;
+  height: 70px;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  background-color:  #001b44;
+  padding-left: 30px;
+  background-color:  #174813;
   color: white;
   font-size: 1.5em;
-  line-height: 1.5;
+  line-height: 2.5;
 }
 
 li:before {
@@ -66,11 +67,11 @@ li::after {
 li button {
   float: right;
   border: none;
-  height: 40px;
+  height: 10px
   cursor: pointer;
-  background-color: #ff7034;
+  background-color: none;
   color: white;
-  font-size: 1em;
+  font-size: 1;
 }
 
 .card {
@@ -95,7 +96,7 @@ button {
   font-size: 15px;
   padding: 15px;
   width: 140px;
-  margin:20px
+  margin:10px
 }
 
 .homepage{
@@ -107,4 +108,25 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:20px
+}
+
+#question 
+{
+  display:none
+}
+
+#timer
+{
+  display:none
+}
+
+#gameEnd
+{
+  display:none
+}
+
+#highScore
+{
+  display:none
 }

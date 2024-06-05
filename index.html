@@ -13,7 +13,9 @@
       <h2>This Quiz will test you on your Javascript fundamentals!</h2>
       <h2>See if you can beat the high score!</h2>
 
-      <div class="buttoncenter"><button id="startBtn">Start Quiz</button></div>
+      <div class="buttoncenter">
+        <button id="startButton">Start Code Quiz</button>
+      </div>
     </div>
 
     <div id="quiz">
@@ -21,47 +23,48 @@
         <div id="quizQuestion"><h1>Question Placeholder</h1></div>
 
         <div class="buttoncenter">
-          <button id="a" onclick="checkAnswer('a')">A</button>
-          <button id="b" onclick="checkAnswer('b')">B</button>
-          <button id="c" onclick="checkAnswer('c')">C</button>
-          <button id="d" onclick="checkAnswer('d')">D</button>
+          <button id="a" onclick="checkCorrect('a')">A</button>
+          <button id="b" onclick="checkCorrect('b')">B</button>
+          <button id="c" onclick="checkCorrect('c')">C</button>
+          <button id="d" onclick="checkCorrect('d')">D</button>
         </div>
 
-        <h3 id="result">That is</h3>
+        <h3 id="result"></h3>
       </div>
 
-      <h1 id="timer">Time:</h1>
+      <h1 id="timer"></h1>
     </div>
 
     <div id="gameEnd">
       <div class="result card">
         <div>
           <h1>Your Score:</h1>
-          <h1 id="Score">Score Placeholder</h1>
+          <div id="score"><h1></h1></div>
         </div>
 
         <div class="buttoncenter">
-          <button id="submitScore" onclick="checkAnswer('a')">
-            Save Score
-          </button>
-          <button id="playAgain" onclick="checkAnswer('b')">Play Again</button>
+          <button id="submitScore" onclick="('a')">Save Score</button>
+          <button id="playAgain" onclick="('b')">Play Again</button>
         </div>
       </div>
     </div>
 
     <div class="card" id="highScore">
-      <h1>High Score</h1>
-      <form id="todo-form" method="POST">
-        <label for="todo-text">Add your initials: </label>
+      <div>
+        <h1>Save Your Score:</h1>
+        <div id="score"><h1></h1></div>
+      </div>
+      <form id="initial-form" method="POST">
+        <label for="initial-text">Add your initials: </label>
         <input
           type="text"
           placeholder="Type in initials and press enter"
-          name="todo-text"
-          id="todo-text"
+          name="initial-text"
+          id="initial-text"
         />
       </form>
-      <p>Todo Count: <span id="todo-count">0</span></p>
-      <ul id="todo-list"></ul>
+      <h1>High Score</h1>
+      <ul id="initial-list"></ul>
     </div>
     <script src="./assets/js/script.js"></script>
   </body>
